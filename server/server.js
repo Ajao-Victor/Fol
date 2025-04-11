@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 // app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 const corsOptions = {
-    origin: [ 'https://fol-app-8b4z.onrender.com/'], 
-    credentials: true, 
+    origin: 'https://fol-app-8b4z.onrender.com',
+    methods: 'GET,POST,PUT,DELETE,OPTIONS',
+    allowedHeaders: 'Content-Type,Authorization',
+    credentials: true,
   };
   app.use(cors(corsOptions));
   app.options('*', cors(corsOptions));
-
-  
 
 const port = 5432;
 const pro = process.env.DATABASE_URL
