@@ -60,6 +60,9 @@ const createTable = async () => {
     await client.query(query);
 };
 createTable();
+app.get('/', async(req,res) => {
+    res.send('server working perfectly')
+})
 
 app.post('/signup', async (req, res) => {
     try {
