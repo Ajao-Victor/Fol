@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 const corsOptions = {
-    origin: [ 'https://fol-app-8b4z.onrender.com/','http://localhost:3000'], 
+    origin: [ 'https://fol-app-8b4z.onrender.com/'], 
     credentials: true, 
   };
   app.use(cors(corsOptions));
