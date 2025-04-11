@@ -140,6 +140,6 @@ app.put("/update", authenticateToken, async (req, res) => {
       res.status(500).json({ error: "Database error" });
     }
   });
-app.listen(process.env.PORT || port, () => {
+app.listen(process.env.PORT , () => {
     console.log(`Server running on port ${port}`);
 });
