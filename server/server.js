@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 const corsOptions = {
-    origin: [ 'http://localhost:3000'], 
+    origin: [ 'https://fol-app-8b4z.onrender.com/','http://localhost:3000'], 
     credentials: true, 
   };
   app.use(cors(corsOptions));
@@ -61,7 +61,7 @@ const createTable = async () => {
 };
 createTable();
 app.get('/', async(req,res) => {
-    res.send('server working perfectly')
+    res.send("fol app's server working perfectly")
 })
 
 app.post('/signup', async (req, res) => {
