@@ -23,7 +23,7 @@ const UpdateAccount = () => {
     try {
       const token = localStorage.getItem("authToken"); 
 
-      const response = await fetch("http://localhost:9000/update", {
+      const response = await fetch("https://fol.onrender.com/update", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

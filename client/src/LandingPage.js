@@ -25,8 +25,7 @@ const Landing = () => {
                 setError('No authentication token found');
                 return;
             }
-
-            const response = await axios.get('/landing', {
+            const response = await axios.get('https://fol.onrender.com/landing', {
                 headers: {
                     Authorization: `Bearer ${token}`, 
                 },

@@ -15,7 +15,7 @@ const Signup = () => {
         event.preventDefault(); // Prevent page reload
 
         try {
-            const response = await fetch('http://localhost:9000/signup', {
+            const response = await fetch('https://fol.onrender.com/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password })

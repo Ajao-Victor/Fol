@@ -9,8 +9,16 @@ require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+// app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
+const corsOptions = {
+    origin: [ 'http://localhost:3000'], 
+    credentials: true, 
+  };
+  app.use(cors(corsOptions));
+  app.options('*', cors(corsOptions));
+
+  
 
 const port = 5432;
 const pro = process.env.DATABASE_URL
