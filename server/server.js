@@ -12,15 +12,25 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 
-const port = 9000;
+const port = 5432;
+const pro = process.env.DATABASE_URL
 
-const client = new Client({
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    host: Number(process.env.DB_HOST),
-    port: process.env.DB_PORT,
-    database: process.env.DB_NAME,
-});
+const client = new Client(
+    process.env.DATABASE_URL
+    ? {
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      }
+    : {
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        host: process.env.DB_HOST,
+        port: Number(process.env.DB_PORT),
+        database: process.env.DB_NAME,
+      }
+);
 const jwtSecret = process.env.JWT_SECRET || 'default_secret';
 
 
