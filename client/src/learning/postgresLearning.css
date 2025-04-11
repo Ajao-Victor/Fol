@@ -1,0 +1,55 @@
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+.command-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007acc;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.code-container {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  color: #dcdcdc;
+  display: block;
+  white-space: pre-wrap;
+}

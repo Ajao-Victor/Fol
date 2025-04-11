@@ -1,0 +1,89 @@
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to right, #111, #333);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Branding Section */
+.footer-brand {
+    text-align: left;
+    flex: 1;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Navigation Links */
+.footer-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00c3ff;
+}
+
+/* Social Media Icons */
+.footer-social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #00c3ff;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+}

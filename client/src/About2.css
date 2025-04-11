@@ -1,0 +1,24 @@
+.about2GrandParent{
+    /* height: 70vh; */
+    height: 100%;
+    width: 100%;
+    /* background-image: url('./view-brain-with-circuit-board.jpg'); */
+    background-image: url('./Components/label.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0% 10% 0%;
+}
+.about2Child{
+    width: 75%;
+    color: white;
+ 
+}
+.chk{
+    color: aliceblue;
+    padding-bottom: 20px;
+}

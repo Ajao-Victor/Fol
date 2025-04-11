@@ -1,0 +1,53 @@
+.grandParent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+.image img {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+.child1 h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.child2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.child3 {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px
+}
