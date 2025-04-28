@@ -51,7 +51,7 @@ const Landing = () => {
                     </div>
                     <div style={{paddingTop: '85px',border: '1px solid black',backgroundColor: '#1a1a1a',color: 'white',paddingLeft:'5%'}}><strong><h2 style={{color: 'white',position:'fixed',backgroundColor:'#1a1a1a',padding:'10px',marginTop:'0%'}}>Hello, {user.username}</h2></strong></div>
                     <div style={{position:'fixed',top:'93px',right:'5%',color:'WHITE',backgroundColor: '#1a1a1a',padding:'10px'}}>
-                        <strong>TEIR {user.teir} USER</strong>
+                        <strong>TIER {user.teir} USER</strong>
                     </div>
                     
 
